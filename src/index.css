@@ -1,0 +1,147 @@
+/*
+  TEMPLATE STYLES: These styles are used as a base template.
+  AI is allowed to modify these styles as needed.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Tiny Teach Press brand tokens — warm paper, navy ink, forest green, gold accent */
+    --paper: 42 47% 95%;          /* #faf6ed */
+    --ink: 221 39% 22%;           /* #23304a */
+    --ink-soft: 224 20% 36%;      /* #4c5670 */
+    --forest: 133 32% 36%;        /* #3f7a4e */
+    --forest-deep: 132 33% 28%;   /* #2e5b3a */
+    --gold: 36 55% 44%;           /* #b4802c */
+    --gold-soft: 39 58% 61%;      /* #dcb567 */
+
+    /* Base UI vars for shadcn, mapped onto the brand palette */
+    --background: var(--paper);
+    --foreground: var(--ink);
+
+    --card: 0 0% 100%;
+    --card-foreground: var(--ink);
+
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--ink);
+
+    --primary: var(--forest);
+    --primary-foreground: 42 47% 97%;
+
+    --secondary: 42 30% 91%;
+    --secondary-foreground: var(--ink);
+
+    --muted: 42 30% 91%;
+    --muted-foreground: var(--ink-soft);
+
+    --accent: var(--gold);
+    --accent-foreground: var(--ink);
+
+    --destructive: 0 72% 46%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 39 28% 85%;
+    --input: 39 28% 85%;
+    --ring: var(--gold);
+
+    --radius: 0.6rem;
+
+    /* Offline Survival Club Branding Tokens (legacy — still used by /offline pages) */
+    --osc-navy: 231 38% 16%;      /* #1a1f3a */
+    --osc-teal: 165 100% 43%;     /* #00d9a3 */
+    --osc-red: 0 100% 64%;        /* #ff4444 */
+    --osc-orange: 35 100% 50%;    /* #ff9500 */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer utilities {
+  .bg-osc-navy {
+    background-color: hsl(var(--osc-navy));
+  }
+  .bg-osc-teal {
+    background-color: hsl(var(--osc-teal));
+  }
+  .bg-osc-red {
+    background-color: hsl(var(--osc-red));
+  }
+  .bg-osc-orange {
+    background-color: hsl(var(--osc-orange));
+  }
+  
+  .text-osc-navy {
+    color: hsl(var(--osc-navy));
+  }
+  .text-osc-teal {
+    color: hsl(var(--osc-teal));
+  }
+  .text-osc-red {
+    color: hsl(var(--osc-red));
+  }
+  .text-osc-orange {
+    color: hsl(var(--osc-orange));
+  }
+
+  .border-osc-navy {
+    border-color: hsl(var(--osc-navy));
+  }
+  .border-osc-teal {
+    border-color: hsl(var(--osc-teal));
+  }
+  .border-osc-red {
+    border-color: hsl(var(--osc-red));
+  }
+  .border-osc-orange {
+    border-color: hsl(var(--osc-orange));
+  }
+  
+  .shadow-osc-teal {
+    --tw-shadow-color: hsl(var(--osc-teal));
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  .shadow-osc-orange {
+    --tw-shadow-color: hsl(var(--osc-orange));
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+}
+
+body {
+    @apply bg-paper text-ink;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fraunces', ui-serif, Georgia, serif;
+    text-wrap: balance;
+}
