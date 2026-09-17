@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { BookHeart, FileText, HelpingHand, MessageSquare, Printer } from 'lucide-react';
+import { BookHeart, FileText, HelpingHand, MessageSquare, Printer, ShieldCheck } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -11,6 +11,12 @@ const resources = [
   { icon: Printer, title: 'Printable Tools', body: 'Checklists and trackers you can print and stick on the fridge.' },
   { icon: MessageSquare, title: 'Conversation Starters', body: 'Simple prompts to open up the harder conversations.', link: '/family-guidance' },
   { icon: BookHeart, title: 'Recommended Books & Apps', body: "Broski's picks and a few tools we actually trust.", link: '/broski' },
+  {
+    icon: ShieldCheck,
+    title: 'NYC Schools Opt-Out',
+    body: 'Parent privacy opt-out form for NYC public schools, 2026–27.',
+    href: '/downloads/nyc-parent-privacy-opt-out.pdf',
+  },
   { icon: HelpingHand, title: 'Support & Help', body: 'Not sure where to start? Reach out and we\'ll point you the right way.', link: '/contact' },
 ];
 
@@ -42,7 +48,14 @@ const ParentResourcesPage = () => {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 gap-6">
               {resources.map((r, i) => {
                 const Icon = r.icon;
-                const Wrapper = r.link ? Link : 'div';
+                const cardClass = 'block bg-white rounded-2xl border border-border p-7 h-full hover:border-forest/40 transition-colors';
+                const cardContent = (
+                  <>
+                    <Icon className="text-forest mb-4" size={22} />
+                    <h3 className="font-display text-lg text-ink font-medium mb-1.5">{r.title}</h3>
+                    <p className="text-sm text-ink-soft leading-relaxed">{r.body}</p>
+                  </>
+                );
                 return (
                   <motion.div
                     key={r.title}
@@ -51,11 +64,17 @@ const ParentResourcesPage = () => {
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.06 }}
                   >
-                    <Wrapper to={r.link} className="block bg-white rounded-2xl border border-border p-7 h-full hover:border-forest/40 transition-colors">
-                      <Icon className="text-forest mb-4" size={22} />
-                      <h3 className="font-display text-lg text-ink font-medium mb-1.5">{r.title}</h3>
-                      <p className="text-sm text-ink-soft leading-relaxed">{r.body}</p>
-                    </Wrapper>
+                    {r.href ? (
+                      <a href={r.href} target="_blank" rel="noopener noreferrer" className={cardClass}>
+                        {cardContent}
+                      </a>
+                    ) : r.link ? (
+                      <Link to={r.link} className={cardClass}>
+                        {cardContent}
+                      </Link>
+                    ) : (
+                      <div className={cardClass}>{cardContent}</div>
+                    )}
                   </motion.div>
                 );
               })}
