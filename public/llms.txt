@@ -1,0 +1,20 @@
+## Pages
+- [About Tiny Teach Press - Our Story & Mission](/about): Empowering families to lead confident technology conversations. Meet the founder and discover our mission to raise capable, creative kids.
+- [Bonus Crossword 1 - Offline Survival Club](/offlinecrossword1): Minecraft-themed offline crossword puzzle for kids.
+- [Bonus Crossword 2 - Offline Survival Club](/offlinecrossword2): Advanced Minecraft-themed offline crossword puzzle.
+- [BrightWrite Jr. | Tiny Teach Press](/brightwritejr): From ideas to real books—together. BrightWrite Jr. is a guided book-maker kit for kids, with or without AI.
+- [Checkout | Tiny Teach Press](/checkout): No description available
+- [College Success | Tiny Teach Press](/collegesuccess): Get into college. Thrive in college. Succeed beyond college — a step-by-step system for families.
+- [Family Guidance & AI Tools | Tiny Teach Press](/familyguidance): Stronger families. Better conversations. Healthier tech habits. Practical guides for families raising kids in the age of AI.
+- [Family Tech Nights - Tiny Teach Press](/familytechnights): Structured, fun family nights to help you stop avoiding the tech conversation. Movies, storytelling, scavenger hunts, and coding activities for the whole family.
+- [Get the Free Guide | Tiny Teach Press](/guide): Read the first chapter of The Living Blue Saga before anyone else.
+- [Logic Challenge - Offline Survival Club](/offlinelogicchallenge): A brain-bending logic puzzle for young gamers.
+- [Offline Content - Tiny Teach Press](/offline): Explore our upcoming offline activities, unplugged resources, and tech-free family fun coming soon to Tiny Teach Press.
+- [Offline Survival Club - Tiny Teach Press](/offlineemailcapture): 100% screen-free challenges for young gamers. Unplug the screen. Keep the adventure.
+- [Privacy Policy - Tiny Teach Press](/privacy): Read the Tiny Teach Press Privacy Policy. Learn how we protect your family
+- [Shop Kits & Books | Tiny Teach Press](/books): Discover books that build skills. Stories that mix reading with doing for creative, capable kids.
+- [Terms of Service - Tiny Teach Press](/termsofservice): Read the Terms of Service for Tiny Teach Press to understand the rules, guidelines, and intellectual property rights related to our products and website.
+- [The Living Blue Saga | Tiny Teach Press](/livingbluesaga): The flagship chapter-book series from Tiny Teach Press — the story that started it all.
+- [Thinkers Rising | Tiny Teach Press](/thinkersrising): 52 weeks. 52 activities. A year of critical-thinking activities families can do together or kids can do solo.
+- [Tiny Teach Press | Growing Outstanding Young Minds](/home): Practical, screen-smart kits and classics that build critical thinking at home and in class. Books, Broski
+- [Tools for Curious Kids - Tiny Teach Press](/tools): Playful, intelligent tools designed to spark curiosity and creativity. From Family Media Kits to Tech Scavenger Hunts, explore ways to learn and grow together.
